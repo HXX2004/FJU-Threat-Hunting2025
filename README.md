@@ -19,3 +19,5 @@ Homework
 1. **pfSense 端**：開啟 Remote Logging，將日誌指向 Wazuh Manager (192.168.18.133)。
 2. **Wazuh 端**：配置 `ossec.conf` 以接收 UDP 514 埠的 Syslog 流量。
 3. **數據驗證**：透過 Wazuh Dashboard 監控防火牆阻擋 (Drop) 事件。
+
+Wazuh Manager 配置： 為了接收來自 pfSense 的日誌，我們在 /var/ossec/etc/ossec.conf 中加入了 Syslog 遠端接收設定。詳情請參閱 ossec_manager_syslog.xml。
